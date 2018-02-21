@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>  
+  <body>
+    <header>
+      <div>
+        <h1 id="header">Jacob Carlton</h1>
+        <p id="title">
+          Web Developer
+        </p>
+      </div>
+    </header>
+    <section>
+      <div>
+        <div id="about">
+          <h2>About</h2>
+          <p>
+            Teaching myself using <a href="https://www.sololearn.com/">SoloLearn</a>, <a href="https://www.freecodecamp.org/">freecodecamp</a>,
+            <a href="http://wesbos.com/">Wes Bos courses</a>, and anything else I can find.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div id="items">
+          <img class="item" alt="My Shopping List - site" src="images/shoppinglist.png">
+          <img src="images/quote.png" alt="Random Quote Generator" class="item">
+          <img src="images/weather.png" alt="Current Weather Website" class="item">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <h3 id="footer">made by Jacob</h3>
+        <div class="icons">
+          <a href="https://www.instagram.com/billblack67/" id="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://github.com/jacobc1204" id="github"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/jacobc1204/" id="linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  
+  <style>
+    
+    body {
+      font-family: "Assistant", sans-serif;
+      background: linear-gradient(to bottom, orange, purple);
+      background-attachment: local;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-auto-flow: row;
+      grid-gap: 20px;
+    }
+
+    header {
+      background: url('http://mediad.publicbroadcasting.net/p/hppr/files/styles/x_large/public/201703/75908-full.jpg');
+      background-size: cover;
+      background-position-y: center;
+      color: black;
+      padding: 20px;
+      height: 300px;
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: right;
+      align-content: center;
+    }
+
+    #header {
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.6);
+      font-size: 50px;
+    }
+
+    #title {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    p {
+      padding: 5px;
+      font-size: 20px;
+      text-align: end;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      color: black;
+      grid-row: 2 / -1;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 1fr);
+      grid-template-rows: auto 1fr;
+      grid-auto-flow: row;
+      align-content: start;
+      grid-gap: 10px;
+    }
+
+    #about {
+      border: 1px solid black;
+      text-align: right;
+      font-size: 30px;
+      padding: 10px;
+    }
+
+    #items {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(auto-fill, 1fr);
+      align-items: center;
+      grid-gap: 10px;
+    }
+
+    .item {
+      grid-column: 3 / -3;
+      border: 2px solid #ffc600;
+      /* border: 1px solid black; */
+      box-shadow: 2px 2px 4px black;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    img:hover {
+      transform: scale(1.5);
+      transition-duration: 0.5s;
+    }
+
+    footer {
+      background: rgba(4, 4, 8, 0.8);
+      padding: 20px;
+      height: 300px;
+      grid-row: -1;
+      color: black;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: left;
+      align-content: start;
+    }
+
+    #footer {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 5px;
+      font-size: 20px;
+    }
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      color: black;
+    }
+
+    a:active {
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    .icons {
+      background: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      padding: 5px;
+    }
+
+  </style>
+
+</html>
