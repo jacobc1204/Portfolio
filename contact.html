@@ -1,0 +1,56 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+  <div id="contact">
+    <form action="mailto:(jacobc.1204@gmail.com)" method="post" enctype="text/plain">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Full Name">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your message..." style="height: 150px"></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</body>
+<style>
+
+  body {
+    font-family: "Assistant", sans-serif;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+  }
+
+  input, textarea {
+    font-size: 15px;
+    font-family: "Assistant", sans-serif;
+    color: black;
+    font-weight: 800;
+  }
+
+  input[type="submit"] {
+    grid-column: span 2;
+    width: 50%;
+    justify-self: center;
+  }
+
+  label {
+    color: white;
+  }
+
+  form > * {
+    width: 100%;
+  }
+
+</style>
+
+</html>
