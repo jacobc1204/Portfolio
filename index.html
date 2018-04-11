@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,6 +16,7 @@
     <meta name="keywords" content="Jacob Carlton, web developer, web, developer, web design, design, designer, website" />
     <meta name="description" content="Web Developer for hire in Tullahoma, TN. Freelance, full-time, or part-time. I would love to build a site for your business!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
@@ -34,21 +34,16 @@
         <div id="about">
           <h2>About</h2>
           <p>
-            Teaching myself using <a href="https://www.sololearn.com/">SoloLearn</a>, <a href="https://www.freecodecamp.org/">freecodecamp</a>,
-            <a href="http://wesbos.com/">Wes Bos courses</a>, and anything else I can find.
-            I am a web developer for hire in Tullahoma, TN. I am open to freelance work and full-time (or part-time) positions.
-            I have not yet used any JavaScript frameworks, but I am excited to learn whichever ones I might need.
-            I have experience with CSS Grid,  <a href="https://www.couchcms.com/">CouchCMS</a>, Git, responsive-design, and Python.
-            Links to all of my projects <a href="links.html" target="_blank">here</a>.
+            Hey! I am an enthusiastic web developer in Tullahoma, TN, and I am open to whatever kind of work I can get. I am self-taught, highly ambitious, and disciplined. So whether it is a simple site to get the word out about your business, an e-commerce site, a blog, an addition to your current site, something you need fixed on your current site, help managing your site, or anything else you might want. I would be happy to help you. You can contact me by hitting the button at the bottom of the page, or just email me at jacob@jacobhcarlton.com. Are you a designer or another developer who would like to talk, or maybe work together on something? Email me! I am constantly working to improve my portfolio so expect new things to be posted here soon. Thank you for visiting my site!
           </p>
         </div>
       </div>
       <div>
         <div id="items">
-          <img class="item" alt="My Shopping List - site" src="images/shoppinglist.png">
-          <img src="images/quote.png" alt="Random Quote Generator" class="item">
-          <img src="images/weather.png" alt="Current Weather Website" class="item">
-          <img src="images/wiki_search.png" alt="Wikipedia Search" class="item">
+          <a href="https://jacobc1204.github.io/shoplist_app/" class="item"><img alt="My Shopping List - site" src="images/shoppinglist.png"></a>
+          <a href="https://codepen.io/jacobc1204/full/qxOXGX/" class="item"><img src="images/quote.png" alt="Random Quote Generator"></a>
+          <a href="https://codepen.io/jacobc1204/full/aqYxpL/" class="item"><img src="images/weather.png" alt="Current Weather Website"></a>
+          <a href="https://codepen.io/jacobc1204/full/JpeNrb/" class="item"><img src="images/wiki_search.png" alt="Wikipedia Search"></a>
         </div>
       </div>
     </section>
@@ -64,165 +59,4 @@
       </form>
     </footer>
   </body>
-
-  <style>
-
-    body {
-      font-family: "Assistant", sans-serif;
-      background: linear-gradient(to bottom, orange, purple);
-      background-attachment: local;
-      background-size: cover;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-      grid-auto-flow: row;
-      grid-gap: 20px;
-    }
-
-    header {
-      background: url('images/keyboard.jpg');
-      background-size: cover;
-      background-position-y: center;
-      color: black;
-      padding: 20px;
-      height: 300px;
-      grid-row: 1;
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: right;
-      align-content: center;
-    }
-
-    #header {
-      padding: 5px;
-      background: rgba(255, 255, 255, 0.6);
-      font-size: 50px;
-    }
-
-    #title {
-      background: rgba(255, 255, 255, 0.6);
-    }
-
-    p {
-      padding: 5px;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    section {
-      background: rgba(255, 255, 255, 0.3);
-      padding: 20px;
-      color: black;
-      grid-row: 2 / -1;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 1fr);
-      grid-template-rows: auto 1fr;
-      grid-auto-flow: row;
-      align-content: start;
-      grid-gap: 10px;
-    }
-
-    #about {
-      border: 1px solid black;
-      text-align: right;
-      font-size: 30px;
-      padding: 10px;
-    }
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-
-    a:hover {
-      color: black;
-    }
-
-    a:active {
-      color: black;
-    }
-
-    a:visited {
-      color: black;
-    }
-
-    #items {
-      height: 100%;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      grid-template-rows: repeat(auto-fill, 1fr);
-      align-items: center;
-      grid-gap: 10px;
-    }
-
-    .item {
-      grid-column: 3 / -3;
-      border: 2px solid #ffc600;
-      /* border: 1px solid black; */
-      box-shadow: 2px 2px 4px black;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    img:hover {
-      transform: scale(1.5);
-      transition-duration: 0.5s;
-    }
-
-    footer {
-      background: rgba(4, 4, 8, 0.8);
-      padding: 20px;
-      height: 300px;
-      grid-row: -1;
-      color: black;
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      grid-gap: 20px;
-      grid-auto-flow: row;
-      align-items: center;
-      align-content: center;
-    }
-
-    h3 {
-      margin: 0;
-      height: 100%;
-      grid-row: 1;
-      background: rgba(255, 255, 255, 0.6);
-      font-size: 20px;
-      display: grid;
-      align-content: center;
-      justify-items: center;
-    }
-
-    .icons {
-      height: 100%;
-      grid-row: 2;
-      background: rgba(255, 255, 255, 0.6);
-      padding: 5px;
-      display: grid;
-      grid-auto-flow: column;
-      align-items: center;
-      justify-content: center;
-      grid-gap: 5px;
-    }
-
-    #contact {
-      grid-row: 3;
-      align-self: start;
-    }
-
-    #contact-btn {
-      font-family: 'Assistant', sans-serif;
-      height: 50%;
-      width: 100%;
-      font-size: 20px;
-    }
-
-  </style>
-
 </html>
