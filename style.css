@@ -43,6 +43,10 @@
     text-align: center;
 }
 
+.nav-btn .block-text {
+    margin: 0;
+}
+
 .container {
     grid-column: 2;
     display: grid;
@@ -101,6 +105,7 @@
     display: grid;
     justify-items: center;
     align-content: center;
+    text-align: center;
 }
 
 /*
