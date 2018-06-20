@@ -66,10 +66,12 @@
 .blog {
     grid-column: 2;
     display: grid;
-    justify-items: start;
+    justify-content: start;
+    justify-items: center;
     align-content: start;
     grid-gap: 10px;
     margin: 5px 15px 0 15px;
+    padding-bottom: 20px;
 }
 
 .item {
@@ -170,6 +172,12 @@ a {
     max-height: 400px;
     box-shadow: 3px 3px 5px -3px black;
     border-radius: 10px;
+}
+
+.blog img {
+    max-width: 90%;
+    max-height: 400px;
+    box-shadow: 3px 3px 5px -3px black;
 }
 
 /*
