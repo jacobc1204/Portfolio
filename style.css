@@ -198,6 +198,7 @@ a {
         width: 100%;
         align-content: center;
         position: static;
+        font-size: 30px;
     }
 
     #header * {
