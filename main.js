@@ -91,7 +91,6 @@ function generateBlogNav(data) {
   <div id="nav">
     ${blogNav.join('')}
   </div>
-  <script src="/script.js"></script>
 </body>
 </html>
 `;
