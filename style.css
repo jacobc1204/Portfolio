@@ -147,8 +147,12 @@ input {
     font-family: 'Open Sans', sans-serif;
 }
 
-input[type=submit] {
+button[type=submit] {
     height: 35px;
+    width: 100%;
+    background: #0ccc66;
+    border: none;
+    cursor: pointer;
 }
 
 textarea {

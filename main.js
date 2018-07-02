@@ -4,11 +4,11 @@ const fs = require('fs');
 const client = contentful.createClient({
   space: 'pxjo3sqgzqm9',
   environment: 'master', // defaults to 'master' if not set
-  accessToken: '39409070d11510463a6b5003e1edeba322a5367eef495132603cae8d5670f163'
+  accessToken: '39409070d11510463a6b5003e1edeba322a5367eef495132603cae8d5670f163',
 });
 
 function writeFile(slug, html) {
-  var stream = fs.createWriteStream(`./blog/${slug}.html`);
+  const stream = fs.createWriteStream(`./blog/${slug}.html`);
   stream.once('open', () => {
     stream.write(html);
     stream.end();
@@ -16,7 +16,7 @@ function writeFile(slug, html) {
 }
 
 function generateBlogPosts(post) {
-  var html = `
+  const html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +33,7 @@ function generateBlogPosts(post) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/style.css">
-  <title>Jacob H Carlton</title>
+  <title>${post.title} || Jacob H Carlton</title>
   <meta name="description" content="${post.description}">
 </head>
 <body>
@@ -57,15 +57,13 @@ function generateBlogPosts(post) {
 }
 
 function generateBlogNav(data) {
-  var blogNav = data.map((post, i) => {
-    return `
-<a href="${post.slug}.html" class="nav-btn btn${i+1}"><div>
+  const blogNav = data.map((post, i) => `
+<a href="${post.slug}.html" class="nav-btn btn${i + 1}"><div>
   <p class="title title-text">${post.title}</p>
   <p class="block-text">${post.description}</p>
 </div></a>
-`;
-  });
-  var html = `
+`);
+  const html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,7 +80,7 @@ function generateBlogNav(data) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/style.css">
-  <title>Jacob H Carlton || Blog</title>
+  <title>Blog || Jacob H Carlton</title>
 </head>
 <body>
   <div id="header">
@@ -101,14 +99,13 @@ function generateBlogNav(data) {
 }
 
 client.getEntries({
-  order: '-sys.createdAt'
+  order: '-sys.createdAt',
 })
-.then((response) => {
+  .then((response) => {
   // console.log(response);
-  let data = response.items.map((post) => {
-    generateBlogPosts(post.fields);
-    return post.fields;
+    const data = response.items.map((post) => {
+      generateBlogPosts(post.fields);
+      return post.fields;
+    });
+    generateBlogNav(data);
   });
-  generateBlogNav(data);
-})
-.catch(console.error)
