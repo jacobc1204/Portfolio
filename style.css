@@ -128,6 +128,35 @@ a {
     text-decoration: none;
 }
 
+form {
+    display: grid;
+    align-content: start;
+    justify-items: start;
+    grid-gap: 10px;
+    width: 400px;
+}
+
+form * {
+    margin: 0;
+}
+
+input {
+    height: 27px;
+    width: 400px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type=submit] {
+    height: 35px;
+}
+
+textarea {
+    width: 400px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*
 *   ID's
 */
