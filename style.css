@@ -218,7 +218,7 @@ textarea {
 */
 @media only screen and (max-width: 800px) {
     body {
-        grid-template-rows: 50vh 1fr;
+        grid-template-rows: 50vh 1fr auto;
         grid-template-columns: none;
         grid-auto-flow: row;
     }
@@ -245,7 +245,7 @@ textarea {
 
     #nav {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 3;
         height: 100%;
     }
 
@@ -265,7 +265,7 @@ textarea {
 
     .nav-btn {
         box-shadow: none;
-        height: 100%;
+        height: 33.3vh;
     }
 
     .text-box {
