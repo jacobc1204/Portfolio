@@ -49,6 +49,7 @@
 
 .container {
     grid-column: 2;
+    height: 100vh;
     display: grid;
     justify-items: center;
     margin: 5px 15px 0 15px;
@@ -133,7 +134,7 @@ form {
     align-content: start;
     justify-items: start;
     grid-gap: 10px;
-    width: 400px;
+    width: 85vw;
 }
 
 form * {
@@ -142,7 +143,7 @@ form * {
 
 input {
     height: 27px;
-    width: 400px;
+    width: 100%;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -156,7 +157,7 @@ button[type=submit] {
 }
 
 textarea {
-    width: 400px;
+    width: 100%;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
