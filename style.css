@@ -49,8 +49,8 @@
 
 .container {
     grid-column: 2;
-    height: 100vh;
     display: grid;
+    grid-template-rows: auto 1fr;
     justify-items: center;
     margin: 5px 15px 0 15px;
 }
@@ -116,7 +116,7 @@
 */
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     font-weight: 200;
     display: grid;
@@ -131,10 +131,9 @@ a {
 
 form {
     display: grid;
-    align-content: start;
-    justify-items: start;
+    align-content: center;
+    justify-items: center;
     grid-gap: 10px;
-    width: 85vw;
 }
 
 form * {
@@ -143,21 +142,20 @@ form * {
 
 input {
     height: 27px;
-    width: 100%;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
 button[type=submit] {
     height: 35px;
-    width: 100%;
+    width: 100px;
+    font-size: 20px;
     background: #0ccc66;
     border: none;
     cursor: pointer;
 }
 
 textarea {
-    width: 100%;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -219,7 +217,7 @@ textarea {
 */
 @media only screen and (max-width: 800px) {
     body {
-        grid-template-rows: 50vh 1fr auto;
+        grid-template-rows: 50vh auto auto;
         grid-template-columns: none;
         grid-auto-flow: row;
     }
@@ -247,7 +245,7 @@ textarea {
     #nav {
         grid-column: 1;
         grid-row: 3;
-        height: 100%;
+        height: 100vh;
     }
 
     #portfolio-items {
@@ -266,7 +264,7 @@ textarea {
 
     .nav-btn {
         box-shadow: none;
-        height: 33.3vh;
+        height: 100%;
     }
 
     .text-box {
@@ -292,6 +290,7 @@ textarea {
     .container {
         grid-column: 1;
         grid-row: 2;
+        min-height: 100vh;
     }
 
     .container * {
