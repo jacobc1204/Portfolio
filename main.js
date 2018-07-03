@@ -37,11 +37,11 @@ function generateBlogPosts(post) {
   <meta name="description" content="${post.description}">
 </head>
 <body>
-  <div id="header">
+  <header id="header">
     <p class="title-text">Jacob H Carlton</p>
     <a href="/.."><img src="/images/logo.svg" alt="The logo for Jacob H Carlton." height="200px"></a>
     <p class="title title-text">Web Developer</p>
-  </div>
+  </header>
   <div class="blog">
     <div class="text-box">
       <h2 class="title title-text">${post.title}</h2>
@@ -83,11 +83,11 @@ function generateBlogNav(data) {
   <title>Blog || Jacob H Carlton</title>
 </head>
 <body>
-  <div id="header">
+  <header id="header">
     <p class="title-text">Jacob H Carlton</p>
     <a href="/.."><img src="/images/logo.svg" alt="The logo for Jacob H Carlton." height="200px"></a>
     <p class="title title-text">Web Developer</p>
-  </div>
+  </header>
   <div id="nav">
     ${blogNav.join('')}
   </div>
