@@ -81,6 +81,7 @@
 
 .item {
     margin-top: 10px;
+    min-height: 100vh;
     display: grid;
     justify-items: center;
     align-content: start;
@@ -218,7 +219,7 @@ header {
 /*
 *   Mobile
 */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     body {
         grid-template-rows: 50vh auto auto;
         grid-template-columns: none;
