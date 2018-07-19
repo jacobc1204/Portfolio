@@ -57,7 +57,7 @@ function generateBlogPosts(post) {
       <h2 class="title title-text">${post.title}</h2>
     </div>
     <p class="block-text">${post.content}</p>
-    <img src="${post.image.fields.file.url}">
+    <img src="${post.image ? post.image.fields.file.url : ''}">
   </div>
   <script src="script.js"></script>
 </body>
@@ -117,14 +117,14 @@ function generateBlogNav(data) {
   writeFile('index', html);
 }
 
-client.getEntries({
-  order: '-sys.createdAt',
-})
+client.getEntries()
   .then((response) => {
-  // console.log(response);
+    // console.log(response);
     const data = response.items.map((post) => {
+      // console.log(post.fields);
       generateBlogPosts(post.fields);
       return post.fields;
     });
     generateBlogNav(data);
-  });
+  })
+  .catch(error => console.error(error));
