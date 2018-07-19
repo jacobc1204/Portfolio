@@ -43,9 +43,12 @@
     text-align: center;
 }
 
+.block-text a {
+    color: #0009;
+}
+
 .block-text a:hover {
     text-decoration: underline;
-    color: #0009;
 }
 
 .nav-btn .block-text {
