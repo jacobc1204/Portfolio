@@ -45,6 +45,7 @@
 
 .block-text a:hover {
     text-decoration: underline;
+    color: #0009;
 }
 
 .nav-btn .block-text {
@@ -129,7 +130,7 @@ body {
 }
 
 a {
-    color: #0008;
+    color: black;
     text-decoration: none;
 }
 
