@@ -4,8 +4,7 @@
   "description": "my personal website",
   "main": "main.js",
   "scripts": {
-    "test": "echo 'Hello'",
-    "build": "main.js"
+    "test": "echo 'Hello'"
   },
   "author": "jacob",
   "license": "ISC",
